@@ -1,0 +1,87 @@
+.hero {
+    background-color:var(--bcg-hero);
+    max-width: 480px;
+    margin: auto;
+    padding-bottom: 118px;
+    padding-top: 118px;
+    text-align: center;
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bcg_Img.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        color: var(--bcg-main);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42/26);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        max-width: 360px;
+        margin-right: auto;
+        margin-left: auto; 
+    }
+
+    &__button {
+        background-color: var(--accent-color);
+        color: var(--bcg-main);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30/16);
+        letter-spacing: 0.06em;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 10px 24px;
+        transition-property: background-color;
+        transition-timing-function: var(--bezier);
+        transition-duration: 250ms;
+    
+        &:hover,
+        &:focus{
+        background-color: #188CE8;
+    }
+    }  
+}
+@include tablet {
+    .hero {
+        background-color:var(--bcg-hero);
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+        background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bcg_Img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+@include desktop {
+    .hero {
+        background-color:var(--bcg-hero);
+        max-width: 1600px;
+        margin: auto;
+        padding-bottom: 200px;
+        padding-top: 200px;
+        text-align: center;
+        background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bcg_Img.jpg);
+        background-size: cover;
+        background-position: center;
+    
+        &__title { 
+            font-size: 44px;
+            line-height: 1.4;
+            max-width: 696px;
+        }
+    
+        &__button {
+            line-height: 1.9;
+            padding: 10px 32px;
+        }  
+    }
+}
+
+

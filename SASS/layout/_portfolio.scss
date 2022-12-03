@@ -1,0 +1,100 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;  
+}
+
+.filter__button {
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--title);
+    background-color: var(--bcg-third);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
+
+}
+.filter__button:hover,
+.filter__button:focus {
+    background-color: var(--accent-color);
+    color: var(--bcg-main);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.projects__subtitle {
+    color: var(--title);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+.projects__text {
+    font-size: 16px;
+    line-height: 1.9;
+    
+}
+.projects__item {
+    width: calc((100% - 2 * 30px) / 3);
+    transition-property: box-shadow;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
+    
+    
+}
+.projects__text-container {
+    padding: 20px 24px;
+    border: 1px solid var(--border-projects);
+    border-top: none;
+}
+.projects__link {
+    display: block;
+    color: var(--text);
+    outline: none;
+    transition-property: box-shadow;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
+}
+.projects__link:focus,
+.projects__link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects__img {
+position: relative;
+overflow: hidden;
+}
+.projects__overlay-text {
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: calc(28/18);
+    color: var(--bcg-main);
+}
+.projects__overlay {
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
+    
+}
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
+transform: translateY(0);
+}

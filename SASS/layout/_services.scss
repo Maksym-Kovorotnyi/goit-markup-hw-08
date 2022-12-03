@@ -1,0 +1,47 @@
+.services-section {
+        display: none;
+    }  
+
+
+@include tablet {
+    .services-section {
+        display: none;
+    } 
+}
+
+@include desktop {
+    .services-section {
+        padding-top: 0px;
+        display: block;
+    }
+    
+    .list-services {
+        display: flex;
+        &__item {
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 30px;
+                }
+        }
+        &__discription {
+            font-size: 14px;
+            line-height: calc(16/14);
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            position: absolute;
+            background-color: rgba(47, 48, 58, 0.8);
+            width: 100%;
+            padding: 27px 0px 27px 0px;
+            bottom: 0;
+            color: var(--bcg-main);
+        }
+       
+    }
+}
+
+
+
+
+
+

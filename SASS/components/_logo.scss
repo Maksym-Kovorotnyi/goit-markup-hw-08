@@ -1,0 +1,25 @@
+
+.logo {
+    color: var(--logo-main);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em; 
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &__accent {
+        color: var(--accent-color);
+    }
+
+    &--footer {
+        display: inline-block;
+        color: var(--bcg-main);
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31/26);
+        margin-bottom: 20px;
+    }
+}

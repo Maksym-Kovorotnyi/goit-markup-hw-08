@@ -1,0 +1,19 @@
+.section__title {
+color: var(--title);
+font-size: 28px;
+line-height: (33px/28px);
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 30px;
+
+    @include tablet {
+    }
+    
+
+    @include desktop {
+    font-size: 36px;
+    line-height: calc(42/36);
+    margin-bottom: 50px;
+    }
+}
+
