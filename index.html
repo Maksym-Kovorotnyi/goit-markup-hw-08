@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list-contacts contacts-container list">
+        <ul class="list-contacts list">
           <li class="list-contacts__item">
             <a href="mailto:info@devstudio.com" class="list-contacts__link link">
               <svg class="list-contacts__icon" width="16" height="12">
@@ -150,7 +150,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- секція:перелік працівників компанії -->
       <section class="section team-section">
         <div class="container">
@@ -158,11 +158,17 @@
           <ul class="list-team list">
             <li class="list-team__item">
               <img
-                src="./images/image4.jpg"
-                alt="чоловік тримає ноутбук та посміхається"
-                width="270"
-                height="260"
-              />
+                srcset="
+                ./images/img4-480-@1x.jpg 450w, ./images/img4-480-@2x.jpg 900w, 
+                ./images/img4-768-@1x.jpg 738w, ./images/img4-768-@2x.jpg 1476w, 
+                ./images/img4-1200-@1x.jpg 1170w, ./images/img4-1200-@2x.jpg 2340w"
+                sizes="
+                (min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                (min-width: 480px) 450px,
+                100vw"
+                src="./images/img4-480-@1x.jpg"
+                alt="чоловік тримає ноутбук та посміхається"/>
               <div class="list-team__text-container">
                 <h3 class="list-team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="list-team__discription">Product Designer</p>
@@ -200,10 +206,16 @@
             </li>
             <li class="list-team__item">
               <img
+              srcset="
+              ./images/img5-480-@1x.jpg 480w, ./images/img5-480-@2x.jpg 960w, 
+              ./images/img5-768-@1x.jpg 768w, ./images/img5-768-@2x.jpg 1536w,
+              ./images/img5-1200-@1x.jpg 1200w, ./images/img5-1200-@2x.jpg 2400w"
+                sizes="
+                (min-width: 480px) 480px, 
+                (min-width: 768px) 354px, 
+                (min-width: 1200px) 270px, 100vw"
                 src="./images/image5.jpg"
                 alt="жінка в окулярах посміхається"
-                width="270"
-                height="260"
               />
               <div class="list-team__text-container">
                 <h3 class="list-team__name">Ольга Рєпіна</h3>
@@ -242,10 +254,16 @@
             </li>
             <li class="list-team__item">
               <img
+              srcset="
+              ./images/img6-480-@1x.jpg 480w, ./images/img6-480-@2x.jpg 960w, 
+              ./images/img6-768-@1x.jpg 768w, ./images/img6-768-@2x.jpg 1536w,
+              ./images/img6-1200-@1x.jpg 1200w, ./images/img6-1200-@2x.jpg 2400w "
+              sizes="
+              (min-width: 480px) 480px, 
+              (min-width: 768px) 354px, 
+              (min-width: 1200px) 270px, 100vw"
                 src="./images/image6.jpg"
                 alt="чоловік дивиться у бік та посміхається"
-                width="270"
-                height="260"
               />
               <div class="list-team__text-container">
                 <h3 class="list-team__name">Микола Тарасов</h3>
@@ -284,10 +302,16 @@
             </li>
             <li class="list-team__item">
               <img
+              srcset="
+              ./images/img7-480-@1x.jpg 480w, ./images/img7-480-@2x.jpg 960w, 
+              ./images/img7-768-@1x.jpg 768w, ./images/img7-768-@2x.jpg 1536w,
+              ./images/img7-1200-@1x.jpg 1200w, ./images/img7-1200-@2x.jpg 2400w "
+              sizes="
+              (min-width: 480px) 480px, 
+              (min-width: 768px) 354px, 
+              (min-width: 1200px) 270px, 100vw"
                 src="./images/image7.jpg"
                 alt="чоловік в окулярах посміхається"
-                width="270"
-                height="260"
               />
               <div class="list-team__text-container">
                 <h3 class="list-team__name">Михайло Єрмаков</h3>
@@ -326,7 +350,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Секція: Постійні клієнти -->
       <section class="section customer-section">
         <div class="container">

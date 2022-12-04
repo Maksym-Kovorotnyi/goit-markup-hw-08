@@ -6,17 +6,36 @@
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     .adress-container{
-        margin-right: 93px;
+        text-align: center;
+        margin-bottom: 60px;
         .footer-address{
             font-style: normal;
         }
     }
-
+    .list-footer__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        transition-property: color;
+        transition-timing-function: var(--bezier);
+        transition-duration: 250ms;
+        &.location {
+            color: var(--bcg-main);
+        }
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+    }      
+    }
+    .list-footer__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
     .join-container {
-        margin-right: auto;
-    
+        margin-bottom: 60px;
         &__title{
             font-size: 14px;
             line-height: calc(16/14);
@@ -24,59 +43,34 @@
             text-transform: uppercase;
             color: var(--bcg-main);
             margin-bottom: 20px;
+            text-align: center;
         }
     }
 }
 
-
-
-
-
-.list-footer__link {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    transition-property: color;
-    transition-timing-function: var(--bezier);
-    transition-duration: 250ms;
-
-    &.location {
+.form-container{
+    text-align: center;
+    .form-container__title {
         color: var(--bcg-main);
-    }
-
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-}
-      
-}
-
-.list-footer__item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.form-container__title {
-    color: var(--bcg-main);
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    }
-    
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        }
+    .form-footer {
+    width: 100%;
     .form-footer__input{
-    width: 358px;
+    width: 100%;
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--bcg-secondary);
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding: 15px 0 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: none;
     }
-    
     .form-footer__btn {
     font-weight: 700;
     font-size: 16px;
@@ -99,6 +93,74 @@
         background-color: #188CE8;
     }
     }
+}
+}
+@include tablet {
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }   
+    .form-container{
+        .form-footer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        .form-footer__input{
+        width: 450px;
+        margin-bottom: 20px;
+        }
+        .form-footer__btn {
+        width: 200px;
+        }
+}
+}
+}
+@include desktop {
+    .footer-container {
+        align-items: baseline;
+        .adress-container{
+            margin-right: 93px;
+            margin-bottom: 0;
+            text-align: start;
+            .footer-address{
+                margin-bottom: 0;
+            }
+    
+        }
+        .join-container {
+            margin-right: auto;
+            &__title{
+                text-align: start;
+            }
+        }
+    }   
+    .form-container{
+        text-align: start;
+        .form-container__title {
+            text-align: start;        
+        }
+        .form-footer{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: baseline;
+        .form-footer__input{
+        width: 358px;
+        margin-right: 12px;
+        padding: 15px 0 15px 16px;
+        }
+    }
+    }
+}
+
+
+
+
+
+
     
     
     
