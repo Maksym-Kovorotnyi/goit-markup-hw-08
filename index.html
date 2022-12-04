@@ -13,12 +13,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Хедер -->
     <header class="page-header">
-      <div class="header-container container ">
+      <div class="header-container container">
         <a href="./index.html" lang="en" class="logo link"
           ><span class="logo__accent">Web</span>Studio</a
         >
@@ -34,6 +34,11 @@
               <a href="" class="list-nav__link link">Контакти</a>
             </li>
           </ul>
+          <button class="menu js-open-menu" type="button">
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/icons/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="list-contacts list">
           <li class="list-contacts__item">
@@ -122,29 +127,29 @@
           <ul class="list-services list">
             <li class="list-services__item">
               <img
-                src="./images/image1.jpg"
+                srcset="./images/img1-1200-@1x.jpg 370w, ./images/img1-1200-@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/img1-1200-@1x.jpg"
                 alt="людина друкує на клавіатурі перед екраном
               компьютера"
-                width="370"
-                height="294"
               />
               <h3 class="list-services__discription">Десктопні додатки</h3>
             </li>
             <li class="list-services__item">
               <img
-                src="./images/image2.jpg"
+                srcset="./images/img2-1200-@1x.jpg 370w, ./images/img2-1200-@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/img2-1200-@1x.jpg"
                 alt="людина з телефоном в руці сидить перед ноутбуком"
-                width="370"
-                height="294"
               />
               <h3 class="list-services__discription">Мобільні додатки</h3>
             </li>
             <li class="list-services__item">
               <img
-                src="./images/image3.jpg"
+                srcset="./images/img3-1200-@1x.jpg 370w, ./images/img3-1200-@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="./images/img3-1200-@1x.jpg"
                 alt="людина зі стілосом працює з планшетом"
-                width="370"
-                height="294"
               />
               <h3 class="list-services__discription">Дизайнерські рішення</h3>
             </li>
@@ -159,16 +164,21 @@
             <li class="list-team__item">
               <img
                 srcset="
-                ./images/img4-480-@1x.jpg 450w, ./images/img4-480-@2x.jpg 900w, 
-                ./images/img4-768-@1x.jpg 738w, ./images/img4-768-@2x.jpg 1476w, 
-                ./images/img4-1200-@1x.jpg 1170w, ./images/img4-1200-@2x.jpg 2340w"
+                  ./images/img4-480-@1x.jpg  450w,
+                  ./images/img4-480-@2x.jpg  900w,
+                  ./images/img4-768-@1x.jpg  354w,
+                  ./images/img4-768-@2x.jpg  708w,
+                  ./images/img4-1200-@1x.jpg 270w,
+                  ./images/img4-1200-@2x.jpg 540w
+                "
                 sizes="
                 (min-width: 1200px) 270px,
                 (min-width: 768px) 354px,
                 (min-width: 480px) 450px,
                 100vw"
                 src="./images/img4-480-@1x.jpg"
-                alt="чоловік тримає ноутбук та посміхається"/>
+                alt="чоловік тримає ноутбук та посміхається"
+              />
               <div class="list-team__text-container">
                 <h3 class="list-team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="list-team__discription">Product Designer</p>
@@ -206,15 +216,20 @@
             </li>
             <li class="list-team__item">
               <img
-              srcset="
-              ./images/img5-480-@1x.jpg 480w, ./images/img5-480-@2x.jpg 960w, 
-              ./images/img5-768-@1x.jpg 768w, ./images/img5-768-@2x.jpg 1536w,
-              ./images/img5-1200-@1x.jpg 1200w, ./images/img5-1200-@2x.jpg 2400w"
+                srcset="
+                  ./images/img5-480-@1x.jpg  450w,
+                  ./images/img5-480-@2x.jpg  900w,
+                  ./images/img5-768-@1x.jpg  354w,
+                  ./images/img5-768-@2x.jpg  708w,
+                  ./images/img5-1200-@1x.jpg 270w,
+                  ./images/img5-1200-@2x.jpg 540w
+                "
                 sizes="
-                (min-width: 480px) 480px, 
-                (min-width: 768px) 354px, 
-                (min-width: 1200px) 270px, 100vw"
-                src="./images/image5.jpg"
+                (min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                (min-width: 480px) 450px,
+                100vw"
+                src="./images/img5-480-@1x.jpg"
                 alt="жінка в окулярах посміхається"
               />
               <div class="list-team__text-container">
@@ -254,15 +269,20 @@
             </li>
             <li class="list-team__item">
               <img
-              srcset="
-              ./images/img6-480-@1x.jpg 480w, ./images/img6-480-@2x.jpg 960w, 
-              ./images/img6-768-@1x.jpg 768w, ./images/img6-768-@2x.jpg 1536w,
-              ./images/img6-1200-@1x.jpg 1200w, ./images/img6-1200-@2x.jpg 2400w "
-              sizes="
-              (min-width: 480px) 480px, 
-              (min-width: 768px) 354px, 
-              (min-width: 1200px) 270px, 100vw"
-                src="./images/image6.jpg"
+                srcset="
+                  ./images/img6-480-@1x.jpg  450w,
+                  ./images/img6-480-@2x.jpg  900w,
+                  ./images/img6-768-@1x.jpg  354w,
+                  ./images/img6-768-@2x.jpg  708w,
+                  ./images/img6-1200-@1x.jpg 270w,
+                  ./images/img6-1200-@2x.jpg 540w
+                "
+                sizes="
+                (min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                (min-width: 480px) 450px,
+                100vw"
+                src="./images/img6-480-@1x.jpg"
                 alt="чоловік дивиться у бік та посміхається"
               />
               <div class="list-team__text-container">
@@ -302,15 +322,20 @@
             </li>
             <li class="list-team__item">
               <img
-              srcset="
-              ./images/img7-480-@1x.jpg 480w, ./images/img7-480-@2x.jpg 960w, 
-              ./images/img7-768-@1x.jpg 768w, ./images/img7-768-@2x.jpg 1536w,
-              ./images/img7-1200-@1x.jpg 1200w, ./images/img7-1200-@2x.jpg 2400w "
-              sizes="
-              (min-width: 480px) 480px, 
-              (min-width: 768px) 354px, 
-              (min-width: 1200px) 270px, 100vw"
-                src="./images/image7.jpg"
+                srcset="
+                  ./images/img7-480-@1x.jpg  450w,
+                  ./images/img7-480-@2x.jpg  900w,
+                  ./images/img7-768-@1x.jpg  354w,
+                  ./images/img7-768-@2x.jpg  708w,
+                  ./images/img7-1200-@1x.jpg 270w,
+                  ./images/img7-1200-@2x.jpg 540w
+                "
+                sizes="
+                (min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                (min-width: 480px) 450px,
+                100vw"
+                src="./images/img7-480-@1x.jpg"
                 alt="чоловік в окулярах посміхається"
               />
               <div class="list-team__text-container">
@@ -468,14 +493,21 @@
           <h2 class="form-container__title">Підпишіться на розсилку</h2>
           <form class="form-footer" name="subscribe_form">
             <label for="email-field">
-              <input class="form-footer__input" type="email" name="email" placeholder="E-mail" id="email-field">
+              <input
+                class="form-footer__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email-field"
+              />
             </label>
-            <button type="submit" class="form-footer__btn">Підписатися
+            <button type="submit" class="form-footer__btn">
+              Підписатися
               <svg class="form-footer__btn-icon" width="24" height="24">
                 <use href="./images/icons/icons.svg#icon-send"></use>
               </svg>
             </button>
-      </form>
+          </form>
         </div>
       </div>
     </footer>
@@ -489,7 +521,7 @@
         </button>
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form-modal">
-          <div class="form-container" role="group">
+          <div role="group">
             <label class="label" for="user_name">Ім'я</label>
             <div class="form-input">
               <input class="form-input__field" type="text" name="user_name" id="user_name" />
@@ -500,18 +532,11 @@
 
             <label class="label" for="user_phone">Телефон</label>
             <div class="form-input">
-              <input
-                class="form-input__field"
-                type="tel"
-                name="user_phone"
-                id="user_phone"
-              />
+              <input class="form-input__field" type="tel" name="user_phone" id="user_phone" />
               <svg class="form-input__icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#icon-phone"></use>
               </svg>
-              
             </div>
-
             <label class="label" for="user_mail">Пошта</label>
             <div class="form-input">
               <input class="form-input__field" type="email" name="user_mail" id="user_mail" />
@@ -527,7 +552,12 @@
               id="comment"
             ></textarea>
             <div class="form-agreement">
-              <input class="checkbox-field visually-hidden" type="checkbox" name="agreement" id="agreement" />
+              <input
+                class="checkbox-field visually-hidden"
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+              />
               <label class="form-agreement__text" for="agreement">
                 <svg class="form-agreement__uncheck-icon" width="16" height="15">
                   <use href="./images/icons/icons.svg#icon-uncheck"></use>
@@ -535,9 +565,8 @@
                 <svg class="form-agreement__check-icon" width="16" height="15">
                   <use href="./images/icons/icons.svg#icon-check"></use>
                 </svg>
-                  Погоджуюся з розсилкою та приймаю<a class="form-agreement__link" href=""
-                  >Умови договору</a
-                ></label
+                Погоджуюся з розсилкою та приймаю
+                <a class="form-agreement__link" href="">Умови договору</a></label
               >
             </div>
             <button class="form__btn" type="submit">Відправити</button>
@@ -545,7 +574,60 @@
         </form>
       </div>
     </div>
+    <!-- мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__close" width="40" height="40">
+          <use href="./images/icons/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+      <ul class="nav-list-mbl list">
+        <li class="nav-list-mbl__item">
+          <a class="nav-list-mbl__link current link" href="./index.html">Студія</a>
+        </li>
+        <li class="nav-list-mbl__item">
+          <a class="nav-list-mbl__link link" href="">Портфоліо</a>
+        </li>
+        <li class="nav-list-mbl__item">
+          <a class="nav-list-mbl__link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="contacts-list-mbl list">
+        <li class="contacts-list-mbl__item--tel">
+          <a class="contacts-list-mbl__link--tel link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="contacts-list-mbl__item--mail">
+          <a class="contacts-list-mbl__link--mail link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-list-mbl list">
+        <li class="social-list-mbl__item">
+          <a class="social-list-mbl__link link" href="">Instagram</a>
+        </li>
+        <li class="social-list-mbl__item">
+          <a class="social-list-mbl__link link" href="">Twitter</a>
+        </li>
+        <li class="social-list-mbl__item">
+          <a class="social-list-mbl__link link" href="">Facebook</a>
+        </li>
+        <li class="social-list-mbl__item">
+          <a class="social-list-mbl__link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- Скрипт -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

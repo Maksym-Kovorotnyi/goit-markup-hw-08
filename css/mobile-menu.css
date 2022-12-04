@@ -1,0 +1,103 @@
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--bcg-main);
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+.menu-container .menu-toggle__close {
+  cursor: pointer;
+}
+.menu-container .menu-toggle__close:hover, .menu-container .menu-toggle__close:focus {
+  fill: var(--accent-color);
+}
+
+.nav-list-mbl {
+  margin-bottom: auto;
+}
+.nav-list-mbl__item {
+  margin-bottom: 32px;
+}
+.nav-list-mbl__link {
+  color: var(--title);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.nav-list-mbl__link.current {
+  color: var(--accent-color);
+}
+
+.contacts-list-mbl__item--tel {
+  margin-bottom: 32px;
+}
+.contacts-list-mbl__item--mail {
+  margin-bottom: 64px;
+}
+.contacts-list-mbl__link--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.contacts-list-mbl__link--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.social-list-mbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.social-list-mbl__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social-list-mbl__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}/*# sourceMappingURL=mobile-menu.css.map */
