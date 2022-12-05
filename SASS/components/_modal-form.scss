@@ -54,19 +54,17 @@ transition-duration: 250ms;
 }
 
 .form-agreement{
+    text-align: center;
     margin-bottom: 30px;
-    .form-agreement__text {
+    &__text {
         font-size: 12px;
         line-height: calc(14/12);
         letter-spacing: 0.03em;
-        .form-agreement__link {
-            color: var(--accent-color);
-        }
     }
+    &__link {
+        color: var(--accent-color);
+        }
 }
-
-
-
 .form__btn {
     display: block;
     margin-left: auto;
@@ -90,13 +88,6 @@ transition-duration: 250ms;
 background-color: var(--accent-color);
 }
 }
-
-
-
-
-
-
-
 .form-agreement__check-icon {
     opacity: 0;
     position: absolute;

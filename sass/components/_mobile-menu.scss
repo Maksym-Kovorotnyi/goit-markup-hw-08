@@ -59,8 +59,8 @@
   }
   &__link--tel{
       font-weight: 500;
-      font-size: 34px;
-      line-height: calc(40/34);
+      font-size: 29px;
+      line-height: calc(40/29);
       letter-spacing: 0.02em;
       color: var(--accent-color);
   }
@@ -76,6 +76,8 @@
 .social-list-mbl{
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  
   &__item:not(:last-child){
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
